@@ -7,8 +7,38 @@
 <body>
 <h1>Hello World! How are you</h1>
 <p>
-	This i s test page for website{html_var}
+	This is test page for website{{html_var}}
 </p>
+<p>
+{% if bool_item %}
+	 the value of teh count is {{num}}
+{% endif %}
+</p>
+
+<p>
+
+{% for some_items in some_list%}
+   {%if some_items|divisibleby:"2"%}
+	even number
+   {%endif%}
+
+
+
+
+
+
+
+
+    {{some_items}}<br/>
+	
+{%endfor%}
+
+<p>some item is {{some_items}}</p>
+
+
+
+
+
 </body>
 </html>
 
