@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+{% block content%}
+<h1>this is home.html file</h1>
+<p>
+        This is test page for website{{html_var}}
+</p>
+<p>
+{% if num is not None %}
+         the value of teh count is {{num}}
+{% endif %}
+</p>
+
+<p>
+<table>
+  {% for some_items in some_list%}
+    <tr class="{% cycle 'row1' 'row2' %}">
+        <td>{{some_items}}</td>
+
+    </tr>
+  {%endfor%}
+</table>
+<p>some item is {{some_items}}</p>
+
+{% endblock content%}
