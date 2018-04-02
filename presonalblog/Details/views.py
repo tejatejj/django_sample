@@ -19,11 +19,11 @@ def home1(request):
     context={
     }
     return render(request,"home1.html",context)
-def home2(request):
+def about(request):
     context={
     }
-    return render(request, "home2.html",context)
-def home3(request):
-    return render(request,"home3.html")
+    return render(request, "about.html",context)
+def contact(request):
+    return render(request,"context.html")
     
 
