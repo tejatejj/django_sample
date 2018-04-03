@@ -24,6 +24,6 @@ def about(request):
     }
     return render(request, "about.html",context)
 def contact(request):
-    return render(request,"context.html")
+    return render(request,"contact.html")
     
 
