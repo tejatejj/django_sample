@@ -4,6 +4,7 @@
 
 <head>
 <title>{% block head_title %}my web-site.com{% endblock head_title%}</title>
+{%include 'snippets/css.html'%}
 </head>
 <body>
 <h1>Welcome to my website</h1>
@@ -14,7 +15,7 @@
 {%block content%}{%endblock content%}
 </div>
 
-
+{%include 'snippets/js.html'%}
 </body>
 </html>
 
