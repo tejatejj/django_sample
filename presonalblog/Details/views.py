@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 import random
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from django.views import View
 
 def home(request):
     html_var=1000
@@ -26,3 +26,6 @@ def about(request):
 def contact(request):
     return render(request,"contact.html")
     
+class ContactView(View):
+    def get():
+        return
